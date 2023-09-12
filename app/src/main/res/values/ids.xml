@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="choiceInput" type="id" />
+    <item name="erropValue" type="id" />
+    <item name="azimuteValue" type="id" />
+    <item name="resultTextView" type="id" />
+    <item name="calculateButton" type="id" />
+</resources>

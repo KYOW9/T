@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/angleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o ângulo"
+        android:inputType="numberDecimal" />
+
+    <!-- Outros campos de entrada e botão de cálculo -->
+
+    <Button
+        android:id="@+id/addAngleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angleInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="155dp"
+        android:background="#0128FF"
+        android:backgroundTint="#092CED"
+        android:foregroundTint="#FFFFFF"
+        android:shadowColor="#FF0000"
+        android:text="Add"
+        android:textColor="#000000"
+        android:textColorHighlight="#FF0000"
+        android:textColorHint="#FF001E"
+        android:textColorLink="#FF0000"
+        app:icon="?android:attr/fingerprintAuthDrawable"
+        app:iconTint="#000000"
+        app:rippleColor="#E40404"
+        app:strokeColor="#000000" />
+
+    <EditText
+        android:id="@+id/choiceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addAngleButton"
+        android:layout_marginTop="16dp"
+        android:hint="Escolha (i/e)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/erropValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceInput"
+        android:layout_marginTop="16dp"
+        android:hint="Digite o valor errop" />
+
+    <EditText
+        android:id="@+id/azimuteValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/erropValue"
+        android:layout_marginTop="16dp"
+        android:hint="Primeiro azimute"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/azimuteValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        android:textColor="#000000"
+        app:iconTint="#FF0000" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+</RelativeLayout>
